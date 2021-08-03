@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/quiz.css" />
+    <title>Quiz - LWS</title>
+  </head>
+  <body>
+    <!-- Navigatin Bar. It contains Logo, Center Text And Save Progress Button at the end -->
+    <nav>
+      <ul>
+        <li>
+          <a href="//learnwithsumit.com" class="brand">
+            <img src="./images/logo-bg.png" alt="Learn with Sumit" />
+            <h3>Learn with Sumit</h3>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="quiz">
+      <h1>Pick three of your favorite Star Wars Flims</h1>
+      <h4>Select up to 3 Options</h4>
+      <form class="multipleAnswers">
+        <!-- Option 1 -->
+        <label class="eachAnswer" for="option1">
+          <input type="checkbox" id="option1" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 2 -->
+        <label class="eachAnswer" for="option2">
+          <input type="checkbox" id="option2" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 3 -->
+        <label class="eachAnswer" for="option3">
+          <input type="checkbox" id="option3" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 4 -->
+        <label class="eachAnswer selected" for="option4">
+          <input type="checkbox" id="option4" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 5 -->
+        <label class="eachAnswer" for="option5">
+          <input type="checkbox" id="option5" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 6 -->
+        <label class="eachAnswer" for="option6">
+          <input type="checkbox" id="option6" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 7 -->
+        <label class="eachAnswer selected" for="option7">
+          <input type="checkbox" id="option7" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 8-->
+        <label class="eachAnswer" for="option8">
+          <input type="checkbox" id="option8" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 9 -->
+        <label class="eachAnswer" for="option9">
+          <input type="checkbox" id="option9" />
+          A New Hope 1
+        </label>
+
+        <!-- Option 10 -->
+        <label class="eachAnswer" for="option10">
+          <input type="checkbox" id="option10" />
+          A New Hope 1
+        </label>
+      </form>
+    </main>
+
+    <div class="progressContainer">
+      <div class="tooltip">24% Cimplete. Keep it Up!</div>
+      <div class="backButton">
+        <span class="material-icons-outlined"> arrow_back </span>
+      </div>
+      <div class="rangeArea">
+        <div class="rangeBody">
+          <div class="progress" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="nextQuestionBtn">
+        Next Question
+        <span class="material-icons-outlined"> arrow_forward </span>
+      </div>
+    </div>
+
+    <div class="miniPlayer floatingBtn">
+      <span class="material-icons-outlined open"> open_in_new </span>
+      <span class="material-icons-outlined close"> close </span>
+      <img src="./images/3.jpg" alt="" />
+      <p>#23 React Hooks Bangla - React useReducer hook Bangla</p>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
