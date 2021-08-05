@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 6rem;
+  padding: 3rem 0;
   margin-top: 60px;
 }
 
@@ -41,8 +41,9 @@
   background: hsla(229, 20%, 57%, 0.253);
 }
 
+/* This class is used to  Hide or Show Second Column of Multiple Chooices*/
 .second {
-  /* display: none !important; */
+  display: none !important;
 }
 
 .multipleAnswers .selected {
@@ -52,6 +53,20 @@
 .multipleAnswers .selected label {
   color: #126232 !important;
 }
+
+/* 
+Progress Container Mini Map
+div - .progressContainer
+    | div - .toolitp
+    | div - .backButton
+        span - material-icons-outlined
+    | div - .rangeArea
+        div - .rangeBody
+            div - .progress
+    | div - .nextQuestionBtn
+        span - .material-icons-outline
+
+*/
 
 /* Progress Container */
 .progressContainer {
@@ -225,16 +240,118 @@
 
 /* Mobile and Tablet Responsive */
 
-@media only screen and (max-width: 1400px) {
-  /*Tablets [1200px -> 1400px]*/
+@media only screen and (max-width: 1536px) {
+  /*Tablets [1024px -> 1536px]*/
+
+  .quiz {
+    padding-top: 2rem;
+  }
+
+  .multipleAnswers {
+    margin: 1rem 0;
+  }
+
   .quizTopicGrid {
     width: 90%;
   }
+  .miniPlayer {
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+  }
 }
 
-@media only screen and (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
-  /* .quizTopicGrid {
-      width: 80%;
-    } */
+@media only screen and (max-width: 1024px) {
+  main {
+    height: 100vh;
+    padding-top: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  .multipleAnswers {
+    grid-auto-flow: unset;
+    margin: 1rem 0;
+  }
+
+  .multipleAnswers .eachAnswer {
+    min-width: 400px;
+  }
+
+  .progressContainer {
+    width: calc(100vw - 60px);
+    bottom: 10px;
+  }
+
+  .progressContainer .backButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nextQuestionBtn {
+    padding: 0.6rem 1rem;
+    font-size: 12px;
+  }
+
+  .floatingBtn {
+    width: 60px;
+    height: 60px;
+    bottom: 80px;
+    right: 10px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: var(--fontPrimary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .floatingBtn:hover {
+    background-color: var(--successGreen);
+  }
+
+  .floatingBtn:hover span {
+    color: var(--fontPrimary);
+  }
+
+  .floatingBtn p {
+    display: none;
+  }
+
+  .floatingBtn img {
+    transform: scale(0);
+    display: none;
+  }
+
+  .floatingBtn span {
+    color: var(--successGreen);
+    font-weight: 500;
+  }
+
+  .floatingBtn .open {
+    display: block;
+  }
+
+  .miniPlayer .close {
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    z-index: 10;
+  }
+
+  .miniPlayer .close:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .floatingBtn .close {
+    display: none;
+  }
 }
