@@ -62,7 +62,7 @@
 
 /* Soltuions  */
 .solutions {
-  width: 90%;
+  width: 70%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
 .questionCount {
   color: #434343;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 1rem;
   overflow: hidden;
 }
@@ -99,8 +99,9 @@
 }
 
 .solutionCard label {
-  font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0.5rem 0;
   color: var(--fontPrimary);
   cursor: pointer;
 }
@@ -144,6 +145,8 @@
 
 .solutionContent ul .selected::after {
   content: "✔️";
+  position: relative;
+  right: 0;
 }
 
 @media only screen and (max-width: 800px) {
@@ -155,13 +158,29 @@
     width: 100%;
   }
 
+  .solutions {
+    width: 90%;
+  }
+
   .solutionContent ul {
     grid-auto-flow: row;
+  }
+
+  .solutionCard {
+    padding: 1.5rem;
+  }
+
+  .solutionCard input {
+    display: none;
   }
 
   .solutionCard input:checked ~ .solutionContent {
     height: fit-content;
     margin-top: 1.4rem;
     transition: all 0.3s ease;
+  }
+
+  .questionCount {
+    margin-bottom: 0.7rem;
   }
 }

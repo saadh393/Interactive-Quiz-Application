@@ -31,10 +31,11 @@ nav {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 2;
 }
 
 nav ul {
-  height: 60px;
+  height: 70px;
   list-style: none;
   display: flex;
   justify-content: space-between;

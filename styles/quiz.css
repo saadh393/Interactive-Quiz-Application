@@ -41,6 +41,12 @@
   background: hsla(229, 20%, 57%, 0.253);
 }
 
+.multipleAnswers .eachAnswer input {
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+}
+
 /* This class is used to  Hide or Show Second Column of Multiple Chooices*/
 .second {
   display: none !important;
