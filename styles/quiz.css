@@ -42,9 +42,9 @@
 }
 
 .multipleAnswers .eachAnswer input {
-  /* appearance: none;
+  appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none; */
+  -moz-appearance: none;
 }
 
 /* This class is used to  Hide or Show Second Column of Multiple Chooices*/
