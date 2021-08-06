@@ -32,9 +32,9 @@
 
 .circleProgress svg circle:nth-child(2) {
   stroke: var(--active);
-  stroke-dasharray: calc(100 * 5.7);
+  stroke-dasharray: calc(100px * 5.7);
   -moz-stroke-dasharray: 280;
-  stroke-dashoffset: calc((100 * 5.7) - ((100 * 5.7) * var(--progress)) / 100);
+  stroke-dashoffset: calc((100px * 5.7) - ((100px * 5.7) * var(--progress)) / 100);
   stroke-linecap: round;
 }
 
